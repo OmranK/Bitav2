@@ -140,7 +140,7 @@ const data = [
   },
   {
     id: 6,
-    imgSrc: Member6,
+    imgSrc: Member5,
     altText: 'Jean Eddy Ulysse',
     title: 'Jean Eddy Ulysse',
     designation: 'General Advisor',
