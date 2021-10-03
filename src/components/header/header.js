@@ -1,6 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Container, Flex, Button } from 'theme-ui';
+import { Link as Linker } from 'theme-ui';
 import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
 import Logo from '../logo';
@@ -20,9 +21,12 @@ export default function Header({ className }) {
             </Link>
           ))}
         </Flex>
-        <Button className='buy_btn' variant='secondary' aria-label='Get Started'>
-          Buy $BITA
-        </Button>
+
+        <Linker href={'https://bitasale.bitastir.tech/login'} target='_blank'>
+          <Button className='buy_btn' variant='secondary' aria-label='Get Started'>
+            Buy $BITA
+          </Button>
+        </Linker>
         <MobileDrawer />
       </Container>
     </header>
