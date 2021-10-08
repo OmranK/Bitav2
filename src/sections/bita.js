@@ -56,7 +56,7 @@ export default function Bita() {
 
 const styles = {
   workflow: {
-    backgroundColor: '#FF4C29',
+    backgroundColor: 'primary',
     backgroundImage: `url(${PatternBG})`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: 'center center',
