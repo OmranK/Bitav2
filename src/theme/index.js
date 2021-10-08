@@ -17,15 +17,15 @@ export default {
 
     white: '#fff', // secondary body color
     // highlight	a background color for highlighting text
-    modes: {
-      dark: {
-        text: '#fff',
-        background: '#000',
-        primary: '#0cf',
-        secondary: '#09c',
-        muted: '#111',
-      },
-    },
+    // modes: {
+    //   dark: {
+    //     text: '#fff',
+    //     background: '#000',
+    //     primary: '#0cf',
+    //     secondary: '#09c',
+    //     muted: '#111',
+    //   },
+    // },
   },
   breakpoints: ['480px', '640px', '768px', '1024px', '1220px', '1366px', '1620px'],
   fonts: {
