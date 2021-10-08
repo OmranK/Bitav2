@@ -66,7 +66,6 @@ const styles = {
     '&.sticky': {
       position: 'fixed',
       backgroundColor: 'rgba(0, 0, 0, 0.6)',
-      // color: '#000000',
       boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
       py: 2,
       'nev > a': {
