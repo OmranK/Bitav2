@@ -4,7 +4,7 @@ import { jsx, Container, Box, Grid, Text, Heading, Button, Image, Link } from 't
 import { keyframes } from '@emotion/react';
 import TextFeature from '../components/text-feature';
 
-import ArenaImage from '../assets/FINAL_DESIGN.png';
+import ArenaImage from '../assets/arenaDesign.png';
 import Smart from '../assets/services/smart.svg';
 import Secure from '../assets/services/secure.svg';
 
