@@ -36,7 +36,7 @@ const styles = {
     title: {
       textAlign: 'center',
       fontSize: 3,
-      color: 'heading_secondary',
+      color: '#0F2137',
       lineHeight: 1.4,
       fontWeight: 700,
       mb: [2, null, 3],
