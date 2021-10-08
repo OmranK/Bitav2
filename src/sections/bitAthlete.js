@@ -4,7 +4,7 @@ import { jsx, Container, Box, Grid, Text, Heading, Button, Image, Link } from 't
 import { keyframes } from '@emotion/react';
 import TextFeature from '../components/text-feature';
 
-import ServiceThumb from '../assets/draft02.jpg';
+import ArenaImage from '../assets/FINAL_DESIGN.png';
 import Smart from '../assets/services/smart.svg';
 import Secure from '../assets/services/secure.svg';
 
@@ -34,7 +34,7 @@ export default function BitAthlete() {
     <section sx={{ variant: 'section.services' }} id='bitathlete'>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image sx={styles.videoImage} src={ServiceThumb} alt='Thumbnail' />
+          <Image sx={styles.videoImage} src={ArenaImage} alt='Arena Image' />
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title}></TextFeature>

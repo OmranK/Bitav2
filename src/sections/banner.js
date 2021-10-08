@@ -25,9 +25,9 @@ export default function Banner() {
           </Text>
           <Text as='p' variant='heroFinal'>
             Pre-IDO sold out. <br />
-            500+ participants. <br />
-            2 Billion+ BITA sold. <br />
-            $500K+ raised.
+            1000+ participants. <br />
+            4 Billion+ BITA sold. <br />
+            $1M+ raised.
           </Text>
         </Box>
       </Container>

@@ -7,6 +7,10 @@ import Performance from '../assets/feature/performance.svg';
 import Partnership from '../assets/feature/partnership.svg';
 import Subscription from '../assets/feature/subscription.svg';
 import Support from '../assets/feature/support.svg';
+import Tokenomics from '../assets/tokenomics.pdf';
+
+import { Helmet } from 'react-helmet';
+import Iframe from 'react-iframe';
 
 const data = [
   {
@@ -48,11 +52,28 @@ export default function Feature() {
           <Text sx={styles.wrapper.title}>
             {' BITA is the ERC20 token protocol that is the lifeblood of BitAstir.'}
           </Text>
+          {/* 
+          <Box sx={styles.widget}>
+            <Helmet>
+              <script src='https://www.createmytoken.com/scripts/embed.js' async></script>
+            </Helmet>
+            <Iframe
+              url='https://www.createmytoken.com/token-watcher/eth-mainnet/0x284b19a5fa65f706422c0c86566e407b0e70e537:534c5a7a64486a2e706e67/embed/'
+              frameBorder='0'
+              height='325'
+              width='550'
+              style='height:325px;width:550px;'
+              loading='eager'
+              sandbox='allow-forms allow-modals allow-popups allow-scripts allow-same-origin'
+              scrolling='no'
+            />
+          </Box> */}
+
           <Text sx={styles.wrapper.title}>{' There are 3 main utilities for the $BITA token.'}</Text>
         </Box>
 
         <Box sx={styles.center}>
-          <Image src={Subscription} />
+          <Image src={Subscription} alt='Subscription icon' />
         </Box>
         <SectionHeader slogan='- Governance -' title='Be a Voice in the DSO' />
         <Box sx={styles.wrapper}>
@@ -69,7 +90,7 @@ export default function Feature() {
         </Box>
 
         <Box sx={styles.center}>
-          <Image src={Partnership} />
+          <Image src={Partnership} alt='Partnership icon' />
         </Box>
         <SectionHeader slogan='- Staking -' title='Put Tokens to Work' />
         <Box sx={styles.wrapper}>
@@ -82,7 +103,7 @@ export default function Feature() {
         </Box>
 
         <Box sx={styles.center}>
-          <Image src={Performance} />
+          <Image src={Performance} alt='Performance icon' />
         </Box>
         <SectionHeader slogan='- Providing Liquidity -' title='Expand The BITA Pool' />
         <Box sx={styles.wrapper}>
@@ -98,7 +119,7 @@ export default function Feature() {
         </Box>
 
         <Box sx={styles.center}>
-          <Image src={Support} />
+          <Image src={Support} alt={'Support icon'} />
         </Box>
         <SectionHeader slogan='- Tiers -' title='Climb the Ranks' />
         <Box sx={styles.wrapper}>
@@ -119,11 +140,12 @@ export default function Feature() {
         </Box>
 
         <Grid sx={styles.grid}>
-          <Link href={'#'} variant='default' sx={styles.center}>
+          <Link href={Tokenomics} variant='default' target='_blank' sx={styles.center}>
             <Button variant='primaryIdentical' aria-label={'Read the Tokenomics Paper'}>
               {'Read the Tokenomics Paper'}
             </Button>
           </Link>
+
           <Link
             href={'https://etherscan.io/token/0x284B19a5fA65F706422C0c86566e407B0E70e537'}
             target='_blank'
@@ -134,11 +156,13 @@ export default function Feature() {
               {'View Token Contract On-Chain'}
             </Button>
           </Link>
+
           <Link variant='default' sx={styles.center}>
             <Button variant='secondaryInactive' aria-label={'Read the Full White Paper'}>
               {'Read the Full White Paper'}
             </Button>
           </Link>
+
           <Link variant='default' sx={styles.center}>
             <Button variant='secondaryInactive' aria-label={'Join Launchpad!'}>
               {'Join Launchpad!'}
@@ -178,6 +202,14 @@ const styles = {
     },
   },
   center: {
+    textDecoration: 'none',
+    width: '100%',
+    flexDirection: 'column',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  widget: {
     textDecoration: 'none',
     width: '100%',
     flexDirection: 'column',
