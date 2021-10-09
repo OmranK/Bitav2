@@ -5,6 +5,9 @@ import { Link } from '../link';
 import data from './footer.data';
 import FooterLogo from '../../assets/logo2.svg';
 
+import { Helmet } from 'react-helmet';
+import Iframe from 'react-iframe';
+
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
@@ -13,6 +16,22 @@ export default function Footer() {
           <Link path='/'>
             <Image src={FooterLogo} alt='Logo'></Image>
           </Link>
+        </Box>
+
+        <Box sx={styles.widget}>
+          <Helmet>
+            <script src='https://www.createmytoken.com/scripts/embed.js' async></script>
+          </Helmet>
+          <Iframe
+            url='https://www.createmytoken.com/token-watcher/eth-mainnet/0x284b19a5fa65f706422c0c86566e407b0e70e537:534c5a7a64486a2e706e67/embed/'
+            frameBorder='0'
+            height='325'
+            width='550'
+            style='height:325px;width:550px;'
+            loading='eager'
+            sandbox='allow-forms allow-modals allow-popups allow-scripts allow-same-origin'
+            scrolling='no'
+          />
         </Box>
         {/* <Box sx={styles.footer.menus}>
           <nav>
@@ -73,5 +92,14 @@ const styles = {
       justifyContent: 'center',
       textAlign: 'center',
     },
+  },
+
+  widget: {
+    textDecoration: 'none',
+    width: '100%',
+    flexDirection: 'column',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 };
