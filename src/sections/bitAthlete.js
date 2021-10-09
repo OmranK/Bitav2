@@ -93,8 +93,9 @@ const styles = {
   },
   thumbnail: {
     mr: ['auto', null, null, 6, 60, 85],
-    order: [2, null, null, 0],
+    order: [-1, null, null, 0],
     ml: ['auto', null, null, 0],
+    mb: [30, null, null, null],
     display: 'inline-flex',
     position: 'relative',
     '> img': {

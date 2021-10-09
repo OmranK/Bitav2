@@ -3,7 +3,7 @@
 import { jsx, Container, Box, Image, Link, Button } from 'theme-ui';
 import TextFeature from '../components/text-feature';
 
-import FeatureThumb from '../assets/deck.png';
+import FeatureThumb from '../assets/deck2.png';
 
 const data = {
   subTitle: 'Bita Genesis',
@@ -63,8 +63,9 @@ const styles = {
   thumbnail: {
     display: 'inline-flex',
     position: 'relative',
-    order: [0, null, null, 0],
+    order: [-1, null, null, 0],
     mr: 'auto',
+    mb: [30, null, null, null],
     ml: ['auto', null, null, null, 7],
     '> img': {
       position: 'relative',

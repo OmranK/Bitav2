@@ -72,7 +72,8 @@ const styles = {
   thumbnail: {
     display: 'inline-flex',
     position: 'relative',
-    order: [2, null, null, 0],
+    order: [-1, null, null, 0],
+    mb: [30, null, null, null],
     mr: 'auto',
     ml: ['auto', null, null, null, 7],
     '> img': {
