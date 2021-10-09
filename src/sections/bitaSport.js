@@ -32,7 +32,7 @@ export default function CoreFeature() {
           />
 
           <Link target='_blank' variant='default' sx={styles.center}>
-            <Button variant='secondaryInactive' aria-label={'Coming Soon'}>
+            <Button variant='inactive' aria-label={'Coming Soon'}>
               {'Coming Soon'}
             </Button>
           </Link>
@@ -48,7 +48,8 @@ const styles = {
     width: '100%',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'flex-end',
+
+    justifyContent: ['center', 'center', 'center', 'flex-end'],
   },
   containerBox: {
     display: 'flex',
@@ -71,6 +72,7 @@ const styles = {
   thumbnail: {
     display: 'inline-flex',
     position: 'relative',
+    order: [2, null, null, 0],
     mr: 'auto',
     ml: ['auto', null, null, null, 7],
     '> img': {

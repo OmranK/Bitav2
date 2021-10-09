@@ -45,7 +45,7 @@ const styles = {
     alignItems: 'center',
     title: {
       textAlign: 'center',
-      fontSize: [2, 3],
+      fontSize: [9.5, 1, 2, 3],
       color: 'white',
       lineHeight: 1.4,
       fontWeight: 700,

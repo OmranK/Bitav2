@@ -302,6 +302,16 @@ export default {
         bg: 'primary',
       },
     },
+    inactive: {
+      variant: 'buttons.defaultBtn',
+      // width: '25vh',
+      cursor: 'not-allowed',
+      border: '2px solid',
+      borderColor: 'primary',
+      color: 'primary',
+      bg: 'transparent',
+      padding: ['10px 15px', null, '15px 30px'],
+    },
     secondaryInactive: {
       variant: 'buttons.defaultBtn',
       width: '25vh',
