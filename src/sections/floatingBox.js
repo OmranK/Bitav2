@@ -45,11 +45,11 @@ const styles = {
     alignItems: 'center',
     title: {
       textAlign: 'center',
-      fontSize: [9.5, 1, 2, 3],
+      fontSize: [10.5, 10.5, 10.5, 12.5],
       color: 'white',
       lineHeight: 1.4,
       fontWeight: 700,
-      mb: [2, null, 3],
+      mb: [2, null, 2],
     },
     subTitle: {
       fontSize: 1,
