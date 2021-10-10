@@ -5,8 +5,8 @@ import { Link } from '../link';
 import data from './footer.data';
 import FooterLogo from '../../assets/logo2.svg';
 
-import { Helmet } from 'react-helmet';
-import Iframe from 'react-iframe';
+// import { Helmet } from 'react-helmet';
+// import Iframe from 'react-iframe';
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
           </Link>
         </Box>
 
-        <Box sx={styles.widget}>
+        {/* <Box sx={styles.widget}>
           <Helmet>
             <script src='https://www.createmytoken.com/scripts/embed.js' async></script>
           </Helmet>
@@ -32,7 +32,7 @@ export default function Footer() {
             sandbox='allow-forms allow-modals allow-popups allow-scripts allow-same-origin'
             scrolling='no'
           />
-        </Box>
+        </Box> */}
         {/* <Box sx={styles.footer.menus}>
           <nav>
             {data.menuItem.map((item, i) => (

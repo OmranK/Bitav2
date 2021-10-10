@@ -191,7 +191,7 @@ export default function TeamSection() {
 
 const styles = {
   teamSection: {
-    marginTop: '100px',
+    // marginTop: '10px',
   },
   grid: {
     mt: [0, null, -6, null, -4],

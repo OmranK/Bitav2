@@ -9,9 +9,6 @@ import Subscription from '../assets/feature/subscription.svg';
 import Support from '../assets/feature/support.svg';
 import Tokenomics from '../assets/tokenomics.pdf';
 
-import { Helmet } from 'react-helmet';
-import Iframe from 'react-iframe';
-
 const data = [
   {
     id: 1,
@@ -52,22 +49,6 @@ export default function Feature() {
           <Text sx={styles.wrapper.title}>
             {' BITA is the ERC20 token protocol that is the lifeblood of BitAstir.'}
           </Text>
-          {/* 
-          <Box sx={styles.widget}>
-            <Helmet>
-              <script src='https://www.createmytoken.com/scripts/embed.js' async></script>
-            </Helmet>
-            <Iframe
-              url='https://www.createmytoken.com/token-watcher/eth-mainnet/0x284b19a5fa65f706422c0c86566e407b0e70e537:534c5a7a64486a2e706e67/embed/'
-              frameBorder='0'
-              height='325'
-              width='550'
-              style='height:325px;width:550px;'
-              loading='eager'
-              sandbox='allow-forms allow-modals allow-popups allow-scripts allow-same-origin'
-              scrolling='no'
-            />
-          </Box> */}
 
           <Text sx={styles.wrapper.title}>{' There are 3 main utilities for the $BITA token.'}</Text>
         </Box>
@@ -202,14 +183,6 @@ const styles = {
     },
   },
   center: {
-    textDecoration: 'none',
-    width: '100%',
-    flexDirection: 'column',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  widget: {
     textDecoration: 'none',
     width: '100%',
     flexDirection: 'column',

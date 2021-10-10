@@ -48,7 +48,6 @@ const styles = {
     width: '100%',
     display: 'flex',
     alignItems: 'center',
-
     justifyContent: ['center', 'center', 'center', 'flex-end'],
   },
   containerBox: {
@@ -86,12 +85,5 @@ const styles = {
     '.img': {
       direction: ['rtl', 'ltr'],
     },
-  },
-  shapeBox: {
-    position: 'absolute',
-    bottom: -65,
-    right: -165,
-    zIndex: -1,
-    display: ['none', 'inline-block', 'none', null, 'inline-block'],
   },
 };
