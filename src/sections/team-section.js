@@ -65,8 +65,8 @@ const data = [
   {
     id: 3,
     imgSrc: Member1,
-    altText: 'Losair Bien-Aime',
-    title: 'Losair Bien-Aime',
+    altText: 'Losaire Bien-Aime',
+    title: 'Losaire Bien-Aime',
     designation: 'Financial Advisor',
     socialProfile: [
       {
