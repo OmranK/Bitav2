@@ -12,7 +12,8 @@ export default function FloatingBox() {
       >
         <Box sx={styles.wrapper}>
           <Text sx={styles.wrapper.title}>{''}</Text>
-          <Text sx={styles.wrapper.title}>{' Token Distribution has begun ! '}</Text>
+          <Text sx={styles.wrapper.title}>{''}</Text>
+          <Text sx={styles.wrapper.title}>{' Token Distribution has begun! '}</Text>
           <Text sx={styles.wrapper.title}>{'Read the official Token Distribution Announcement'}</Text>
         </Box>
       </Link>
@@ -23,8 +24,8 @@ export default function FloatingBox() {
 const styles = {
   floatingBox: {
     width: '50vw',
-    height: '10vh',
-    borderRadius: '4px',
+    height: '8vh',
+    borderRadius: '200px',
     backgroundColor: '#28385E',
     '&:hover': {
       boxShadow: 'rgba(233, 76, 84, 0.57) 0px 9px 50px -5px',
@@ -43,18 +44,14 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center',
     title: {
       textAlign: 'center',
-      fontSize: [10.5, 10.5, 10.5, 12.5],
       color: 'white',
-      lineHeight: 1.4,
+      lineHeight: 1,
       fontWeight: 700,
+      fontSize: '1vw',
       mb: [2, null, 2],
-    },
-    subTitle: {
-      fontSize: 1,
-      fontWeight: 400,
-      lineHeight: '1.9',
     },
   },
 };

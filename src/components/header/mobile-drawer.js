@@ -1,28 +1,27 @@
 import React, { useState } from 'react';
-import { Box } from 'theme-ui';
+import { Box, Link as LinkT } from 'theme-ui';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import Drawer from '../drawer';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-scroll';
-import { FaFacebookF, FaTwitter, FaGithubAlt, FaDribbble } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaMediumM } from 'react-icons/fa';
 import menuItems from './header.data';
 
 const social = [
   {
-    path: '/',
-    icon: <FaFacebookF />,
-  },
-  {
-    path: '/',
+    name: 'twitter',
+    path: 'https://twitter.com/BitAstir',
     icon: <FaTwitter />,
   },
   {
-    path: '/',
-    icon: <FaGithubAlt />,
+    name: 'linkedin',
+    path: 'https://www.linkedin.com/in/omrank/',
+    icon: <FaLinkedin />,
   },
   {
-    path: '/',
-    icon: <FaDribbble />,
+    name: 'medium',
+    path: 'https://bitastirofficial.medium.com',
+    icon: <FaMediumM />,
   },
 ];
 
@@ -63,7 +62,9 @@ export default function MobileDrawer() {
             <Box sx={styles.social}>
               {social.map((socialItem, i) => (
                 <Box as='span' key={i} sx={styles.social.icon}>
-                  <Link to={socialItem.path}>{socialItem.icon}</Link>
+                  <LinkT href={socialItem.path} target='_blank' variant='default' sx={styles.link}>
+                    {socialItem.icon}
+                  </LinkT>
                 </Box>
               ))}
             </Box>
@@ -179,5 +180,14 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     py: '0',
+  },
+
+  link: {
+    textDecoration: 'none',
+    color: 'text',
+    cursor: 'pointer',
+    '&:hover': {
+      color: 'secondary',
+    },
   },
 };

@@ -41,6 +41,10 @@ const data = [
   },
 ];
 
+const titleText =
+  "As a DSO (Decentralized Sports Organization), BitAstir's mission is to become the world's leading Sovereign Sports Authority." +
+  'We aim to accelerate the digitization & decentralization of sport. Through the provision of a sophisticated, economically sound, blockchain based infrastructure.';
+
 export default function About() {
   return (
     <section sx={{ variant: 'section.keyFeature' }} id='about'>
@@ -74,3 +78,53 @@ const styles = {
     width: ['80px', null, null, '90px', null, '10000px'],
   },
 };
+
+// const data = [
+//   {
+//     id: 1,
+//     imgSrc: Performance,
+//     altText: 'Fast Performance',
+//     title: 'A broker for athletic talent',
+//     text: "BitAstir's first feature will be the BitAthlete system. BitAthlete will allow althetes to kick start the monitezation of their talent.",
+//   },
+//   {
+//     id: 2,
+//     imgSrc: Partnership,
+//     altText: 'Partnership deal',
+//     title: 'A talent management platform',
+//     text: "The BitAthlete system will live on the BitaSport platform. BitAthlete's will have full control of their profiles and portfolios.",
+//   },
+//   {
+//     id: 4,
+//     imgSrc: Support,
+//     altText: 'Customer Support',
+//     title: 'A platform for monetizing & managing athletes',
+//     text: 'The BitaSport platform will also be accesible to Talent Managers and Supporters who will be able to carry out their own respective roles.',
+//   },
+//   {
+//     id: 3,
+//     imgSrc: Subscription,
+//     altText: 'Pro Subscription',
+//     title: 'An authority for the Sports Industry',
+//     text: 'The BitAstir DSO will dictate the future of the BitaSport platform. A few ideas we have are decentralized streaming and decentralized fantasy sports. ',
+//   },
+// ];
+
+// export default function About() {
+//   return (
+//     <section sx={{ variant: 'section.keyFeature' }} id='about'>
+//       <Container>
+//         <SectionHeader
+//           slogan='About Us'
+//           title='
+//         BitAstir aims to accelerate the decentralization of sports through a sophisticated application of blockchain technology. BitAstir will serve multiple functions.'
+//         />
+//         <Grid sx={styles.grid}>
+//           {data.map((item) => (
+//             <FeatureCardColumn key={item.id} src={item.imgSrc} alt={item.altText} title={item.title} text={item.text} />
+//           ))}
+//         </Grid>
+//       </Container>
+//     </section>
+//   );
+// }

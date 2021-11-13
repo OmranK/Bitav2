@@ -2,11 +2,28 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Image, Text } from 'theme-ui';
 import { Link } from '../link';
+import { Link as LinkT } from 'theme-ui';
 import data from './footer.data';
+import { FaTwitter, FaLinkedin, FaMediumM } from 'react-icons/fa';
 import FooterLogo from '../../assets/logo2.svg';
 
-// import { Helmet } from 'react-helmet';
-// import Iframe from 'react-iframe';
+const social = [
+  {
+    name: 'twitter',
+    path: 'https://twitter.com/BitAstir',
+    icon: <FaTwitter />,
+  },
+  {
+    name: 'linkedin',
+    path: 'https://www.linkedin.com/in/omrank/',
+    icon: <FaLinkedin />,
+  },
+  {
+    name: 'medium',
+    path: 'https://bitastirofficial.medium.com',
+    icon: <FaMediumM />,
+  },
+];
 
 export default function Footer() {
   return (
@@ -16,30 +33,28 @@ export default function Footer() {
           <Link path='/'>
             <Image src={FooterLogo} alt='Logo'></Image>
           </Link>
+          {/* 
+          <Box sx={styles.footer.menus}>
+            <nav>
+              {data.menuItem.map((item, i) => (
+                <Link path={item.path} key={i} label={item.label} sx={styles.footer.link} />
+              ))}
+            </nav>
+          </Box> */}
         </Box>
 
-        {/* <Box sx={styles.widget}>
-          <Helmet>
-            <script src='https://www.createmytoken.com/scripts/embed.js' async></script>
-          </Helmet>
-          <Iframe
-            url='https://www.createmytoken.com/token-watcher/eth-mainnet/0x284b19a5fa65f706422c0c86566e407b0e70e537:534c5a7a64486a2e706e67/embed/'
-            frameBorder='0'
-            height='325'
-            width='550'
-            style='height:325px;width:550px;'
-            loading='eager'
-            sandbox='allow-forms allow-modals allow-popups allow-scripts allow-same-origin'
-            scrolling='no'
-          />
-        </Box> */}
-        {/* <Box sx={styles.footer.menus}>
-          <nav>
-            {data.menuItem.map((item, i) => (
-              <Link path={item.path} key={i} label={item.label} sx={styles.footer.link} />
+        <Box sx={styles.menuFooter}>
+          <Box sx={styles.social}>
+            {social.map((socialItem, i) => (
+              <Box as='span' key={i} sx={styles.social.icon}>
+                <LinkT href={socialItem.path} target='_blank' variant='default' sx={styles.link}>
+                  {socialItem.icon}
+                </LinkT>
+              </Box>
             ))}
-          </nav>
-        </Box> */}
+          </Box>
+        </Box>
+
         <Text sx={styles.footer.copyright}>Copyright BitAstir {new Date().getFullYear()} </Text>
       </Container>
     </footer>
@@ -94,12 +109,44 @@ const styles = {
     },
   },
 
-  widget: {
-    textDecoration: 'none',
+  menuFooter: {
     width: '100%',
+    display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
+    mt: 'auto',
+  },
+
+  link: {
+    textDecoration: 'none',
+    color: 'text',
+    cursor: 'pointer',
+    '&:hover': {
+      color: 'secondary',
+    },
+  },
+
+  social: {
+    width: '100%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+
+    icon: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'text',
+      fontSize: 20,
+      mr: '20px',
+      transition: 'all 0.25s',
+      cursor: 'pointer',
+      ':last-child': {
+        mr: '0',
+      },
+      '&:hover': {
+        color: 'secondary',
+      },
+    },
   },
 };

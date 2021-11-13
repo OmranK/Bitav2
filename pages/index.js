@@ -15,6 +15,7 @@ import BitAthlete from '../src/sections/bitAthlete';
 import BitaGenesis from '../src/sections/bitaGenesis';
 import BitaSport from '../src/sections/bitaSport';
 import TeamSection from '../src/sections/team-section';
+import Footer from '../src/components/footer/footer';
 
 export default function IndexPage() {
   return (
