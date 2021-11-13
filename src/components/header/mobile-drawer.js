@@ -15,7 +15,7 @@ const social = [
   },
   {
     name: 'linkedin',
-    path: 'https://www.linkedin.com/in/omrank/',
+    path: 'https://www.linkedin.com/company/bitastir',
     icon: <FaLinkedin />,
   },
   {
