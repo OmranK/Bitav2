@@ -138,8 +138,8 @@ export default function Feature() {
             </Button>
           </Link>
 
-          <Link variant='default' sx={styles.center}>
-            <Button variant='secondaryInactive' aria-label={'Read the Full White Paper'}>
+          <Link href={Tokenomics} variant='default' target='_blank' sx={styles.center}>
+            <Button variant='primaryIdentical' aria-label={'Read the Full White Paper'}>
               {'Read the Full White Paper'}
             </Button>
           </Link>
