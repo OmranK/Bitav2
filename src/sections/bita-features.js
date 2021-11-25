@@ -8,6 +8,7 @@ import Partnership from '../assets/feature/partnership.svg';
 import Subscription from '../assets/feature/subscription.svg';
 import Support from '../assets/feature/support.svg';
 import Tokenomics from '../assets/tokenomics.pdf';
+import Whitepaper from '../assets/whitepaper.pdf';
 
 const data = [
   {
