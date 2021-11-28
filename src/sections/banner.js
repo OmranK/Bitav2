@@ -23,7 +23,9 @@ export default function Banner() {
             Live on the Ethereum blockchain. <br />
             <br />
           </Text>
-          <Text as='p' variant='heroFinal'>
+
+          <Text as='p' variant='heroFinal' sx={styles.padText}>
+            <br />
             Pre-IDO sold out. <br />
             1000+ participants. <br />
             4 Billion+ BITA sold. <br />
@@ -76,6 +78,9 @@ const styles = {
     },
     colorText: {
       color: '#FF4C29',
+    },
+    padText: {
+      // marginTop: '40px',
     },
   },
 };
